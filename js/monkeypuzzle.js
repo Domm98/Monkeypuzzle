@@ -685,4 +685,3 @@ function set_analyst_email()
     analyst_email = document.getElementById('analyst_email_textarea').value;
     update_analyst_email(analyst_email);
 }
-
