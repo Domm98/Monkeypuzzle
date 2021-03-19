@@ -16,7 +16,7 @@
         padding: 0px;
         width: 300px;
         max-width:45%;
-        min-width: 28%; /* Change the % of min-width to edit the width of a resource pane*/
+        min-width: 20%; 
         background-color: #cbc5c1;
         color: #3E3E3B;		
     }
