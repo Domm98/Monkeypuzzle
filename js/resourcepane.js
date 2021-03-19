@@ -9,7 +9,6 @@ if (window.performance.getEntriesByType("navigation")) {
     r = window.performance.getEntriesByType("navigation")[0].type;
     if (r == "reload") {
         pdf_count = 0;
-		//localStorage.clear();
     }
 }
 
@@ -22,10 +21,8 @@ function add_tab(load_id = null) {
         localStorage.setItem("state", JSON.stringify(get_sd()));
     }
     else { tab_id = load_id; }
-
     var resource_type_idx = document.getElementById("resource_type").options.selectedIndex;
     var resource_type_txt = document.getElementById("resource_type").options[resource_type_idx].text;
-	
     if (resource_type_txt.toLowerCase() === "text") {
 		add_resource_header();
         add_text_resource_body(tab_id);
