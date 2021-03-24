@@ -37,7 +37,7 @@ function add_tab(load_id = null) {
             return tab_id;
         }
         else {
-            alert("You can only create one PDF resource pane, please open a new PDF file from the toolbar. Or, if you have deleted a PDF pane, simply refresh the page to open a new one.");
+            alert("You can only create one PDF resource pane, please open a new PDF document using the open file button.");
         }
     }
 }
