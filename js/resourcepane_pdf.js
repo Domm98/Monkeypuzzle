@@ -2,7 +2,7 @@ function add_pdf_resource_body(tab_id) { //Load a pdf file into the resource pan
     var tab_body = $(`
         <div id="` + tab_id + `_body" class="resource_pane_tab_content">
                 <div class="pdf-form-group">
-                        <button type="button" class="btn btn-default" onclick="remove_tab()" title="Remove this tab from the resource pane">
+                        <button type="button" class="btn btn-default" onclick="remove_tab_pdf()" title="Remove this tab from the resource pane">
                             <i class="fa fa-trash fa-fw fa-lg"></i>
                         </button>
                         <!-- Monkeypuzzle button-->

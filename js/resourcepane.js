@@ -78,7 +78,29 @@ function remove_tab() {
             }
         }
     });
+	
+    localStorage.setItem("state", JSON.stringify(get_sd()));
+    if (tabs.length >= 1 && idx != -1) {
+        tabs.splice(idx, 1);
+        current_tab = tabs[tabs.length - 1];
+        set_active_tab(current_tab + "_body");
+    }
+}
 
+function remove_tab_pdf() {
+	pdf_count = 0;
+    $("#" + current_tab + "_btn").remove();
+    $("#" + current_tab + "_body").remove();
+    var idx = tabs.indexOf(current_tab);
+    delete_resource(current_tab);
+    sd.nodes.forEach((node) => {
+        if (node.type == 'atom') {
+            if (current_tab in node.sources) {
+                delete_source(node.id, current_tab);
+            }
+        }
+    });
+	
     localStorage.setItem("state", JSON.stringify(get_sd()));
     if (tabs.length >= 1 && idx != -1) {
         tabs.splice(idx, 1);
