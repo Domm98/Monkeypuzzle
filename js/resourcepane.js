@@ -2,7 +2,6 @@ var current_tab = 0;
 var last_number = 1;
 var tabs = [];
 var pdf_count = 0;
-var reload_count;
 
 //Reset pdfcount when page is reloaded
 if (window.performance.getEntriesByType("navigation")) {
