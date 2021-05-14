@@ -1,6 +1,6 @@
 Monkeypuzzle version 1.5
 -----------------------------
-Monkeypuzzle was created as a web-based argument analysis tool, whereby a user may pick out pieces of text from a document and create an argument diagram containing the premise(s) and conclusion(s) of an argument.
+Monkeypuzzle is a web-based argument analysis tool, whereby a user may pick out pieces of text from a document and create an argument diagram containing the premise(s) and conclusion(s) of an argument.
 
 This project aims to extend Monkeypuzzle to offer users the additional functionality of PDF analysis.
 
